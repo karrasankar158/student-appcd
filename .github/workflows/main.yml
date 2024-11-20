@@ -1,4 +1,4 @@
-name: docker-image-push-to-dockerhub-ci
+name: docker-image-push-to-dockerhub-CD
 
 on:
   push:
