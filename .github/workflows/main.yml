@@ -41,7 +41,8 @@ jobs:
             context: . #Current location
             file: ./Dockerfile #Docker file path
             push: true #Push Image
-            tags: ${{secrets.DOCKER_USERNAME}}/student-appcd:latest #tag
+            #tags: ${{secrets.DOCKER_USERNAME}}/student-appcd:latest #tag
+            tags: ${{secrets.DOCKER_USERNAME}}/student-appcd:${{github.sha}} #tag
 
 
 
