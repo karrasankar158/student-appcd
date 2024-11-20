@@ -9,7 +9,7 @@ on:
     branches:
       - main #Trigger on pull request to 'main'
       - dev
-  jobs:
+  jobs: 
     build-and-push:
       runs-on: ubuntu-latest #Use latest Ubuntu
 
@@ -23,7 +23,7 @@ on:
             java-version: '21' #Java version 21
             distribution: 'temurin' #Temurin distribution
 
-        - name: Build with Maven #Build project with maven 
+        - name: Build with Maven #Build project with maven
           run: mvn clean install #Maven Build
 
         - name: Set up Docker Buildx #Set up Docker Buildx
